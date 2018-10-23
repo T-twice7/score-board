@@ -1,0 +1,52 @@
+<!--
+  Generated template for the BoardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Board Results</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="home">
+    <div id="d1" (click)="selectTeam(1)" >
+        <h4 (click)="selectTeam(1)" >HOME</h4>
+        <ion-item>
+        <ion-label ><marquee  behavior="slide" loop="1" class="home">{{TEAM1}}</marquee>
+        </ion-label>
+      </ion-item>
+        <div class="d1a">
+          <ion-label>POINTS:
+            <br><br><br><br><h1 (click)=" presentAlert()">({{scoreA}})</h1></ion-label>
+            <p>Click a number to subtract</p>
+        </div>
+        </div>
+        <div id="d2" (click)="selectTeam(2)">
+            <h4 (click)="selectTeam(2)">AWAY</h4>
+            <ion-item>
+            <ion-label ><marquee behavior="slide" loop="1" class="away">{{TEAM2}}</marquee>
+            </ion-label>
+          </ion-item>
+            <div class="d2a">
+              <ion-label>POINTS:
+                  <br><br><br><br><h1 (click)=" presentAlert()">({{scoreB}})</h1></ion-label>
+                  <p >Click a number to subtract</p>
+            </div>
+        </div>
+        
+  
+        <div id="d3">
+        <button ion-button round outline small color="dark" (click)="calTry()">TRY</button>
+        <button ion-button round outline small color="dark" (click)="calPen()">PENALTY</button>
+            <button ion-button round outline small color="dark" (click)="calCon()">CONVERSION</button>
+            <button ion-button round outline small color="danger" (click)="clear()">RESET</button>
+      
+          </div>
+        </div>
+</ion-content>

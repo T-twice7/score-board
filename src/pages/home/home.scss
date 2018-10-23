@@ -1,0 +1,73 @@
+page-home {
+
+}
+ form.ng-untouched.ng-pristine.ng-valid{
+    //  flex-direction: row;
+    margin-top: 200px;
+    // position: center ;
+    //  justify-content: center;
+    //  align-items: centeR;
+    text-align: center;
+     background-color: beige;
+    //  opacity: 0.6;
+     box-shadow: inset  0 0 20px black;
+     background-attachment: fixed;
+     div.i1{
+         float: left;
+         width: 130px;
+         margin-left: 10px;
+         ion-item{
+            border-radius: 10px;
+            background-color:transparent;
+             box-shadow:inset 0 0 10px black;
+             border-radius: 2em 1em 2em 1em/ 1em 3em 1em 3em;
+              color: black;
+       }
+       ion-label{
+           text-align: center;
+           font-family: cursive;
+           color: black;
+        //    text-shadow: 3px 3px 3px black;
+           z-index: 20px;
+       }
+     }
+     div.i2{
+         float: right;
+         width: 130px;
+         margin-right: 10px;
+        ion-item{
+             border-radius: 10px;
+             background-color:transparent;
+            //  box-shadow: inset 0 0 5px black;
+              color: black;
+              box-shadow:inset 0 0 10px black;
+              border-radius: 2em 1em 2em 1em/ 1em 3em 1em 3em;
+        }
+        ion-label{
+            text-align: center;
+            font-family: cursive;
+            color: black;
+            // text-shadow: 3px 3px 3px black;
+        }
+     }
+     height: 200px;
+     border-radius: 10px;
+
+     button{
+        border-radius: 2em 1em 2em 1em/ 1em 3em 1em 3em;
+        border-left: none;
+        border-right: none;
+        top: 20px;
+        color: brown;
+        background-image: url("../../assets/imgs/grass.jpeg");
+        background-size: cover;
+     }
+     button:hover{
+         border-radius: 100px;
+         cursor: pointer;
+        //  background-color:black;
+         box-shadow: 0 0 20px black;
+         color: aquamarine;
+         border: none;
+     }
+ }

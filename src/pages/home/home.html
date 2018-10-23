@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="dark">
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+          <div class="i1">
+              <ion-label>TEAM-A:</ion-label>
+          <ion-item  color="secondary">
+            <ion-input type="text" placeholder="Home" #team1></ion-input>
+          </ion-item>
+          </div>
+        <div class="i2">
+            <ion-label>TEAM-B:</ion-label>
+          <ion-item color="primary">
+            <ion-input type="text" placeholder="Away" #team2></ion-input>
+          </ion-item>
+        </div>
+        <button ion-button color="dark"  (click)="addTam(team1.value,team2.value)" outline>Proceed</button>
+  </form>
+</ion-content>
